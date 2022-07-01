@@ -1,5 +1,4 @@
 from bot import MyBot
-import config
 import os
 
 
