@@ -1,17 +1,11 @@
 from bot import MyBot
 import config
-
-# TODO:
-#  1) запилить телеграм бота +
-#  2) запилить коменты +
-#  3) скрыть секреты
-#  4) залить на гит
-#  5) задеплоить на хероку
+import os
 
 
 def main():
-    engine_str = config.engine_str
-    token = config.token
+    engine_str = os.environ['DATABASE_URL']
+    token = os.environ['TOKEN']
     bot = MyBot(token, engine_str)
     bot.run_bot()
 
