@@ -10,7 +10,7 @@ def main():
     token = os.environ['TOKEN']
     bot = MyBot(token, engine_str)
     bot.run_bot()
-
+#трахать сок
 
 if __name__ == '__main__':
     main()
